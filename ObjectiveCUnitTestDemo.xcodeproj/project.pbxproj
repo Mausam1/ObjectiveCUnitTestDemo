@@ -14,6 +14,9 @@
 		4D3DF3251D64BFBB00C8B627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DF3241D64BFBB00C8B627 /* Assets.xcassets */; };
 		4D3DF3281D64BFBB00C8B627 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3DF3261D64BFBB00C8B627 /* LaunchScreen.storyboard */; };
 		4D3DF3331D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF3321D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.m */; };
+		4D3DF33E1D64C01400C8B627 /* EmailIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF33D1D64C01400C8B627 /* EmailIdValidator.m */; };
+		4D3DF33F1D64C01400C8B627 /* EmailIdValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF33D1D64C01400C8B627 /* EmailIdValidator.m */; };
+		4D3DF3601D64D8DA00C8B627 /* EmailIdValidatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D3DF35F1D64D8DA00C8B627 /* EmailIdValidatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		4D3DF32E1D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObjectiveCUnitTestDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D3DF3321D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCUnitTestDemoTests.m; sourceTree = "<group>"; };
 		4D3DF3341D64BFBB00C8B627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D3DF33D1D64C01400C8B627 /* EmailIdValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailIdValidator.m; sourceTree = "<group>"; };
+		4D3DF3401D64C54A00C8B627 /* EmailIdValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailIdValidator.h; sourceTree = "<group>"; };
+		4D3DF35F1D64D8DA00C8B627 /* EmailIdValidatorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailIdValidatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,8 @@
 				4D3DF31C1D64BFBB00C8B627 /* AppDelegate.m */,
 				4D3DF31E1D64BFBB00C8B627 /* ViewController.h */,
 				4D3DF31F1D64BFBB00C8B627 /* ViewController.m */,
+				4D3DF3401D64C54A00C8B627 /* EmailIdValidator.h */,
+				4D3DF33D1D64C01400C8B627 /* EmailIdValidator.m */,
 				4D3DF3211D64BFBB00C8B627 /* Main.storyboard */,
 				4D3DF3241D64BFBB00C8B627 /* Assets.xcassets */,
 				4D3DF3261D64BFBB00C8B627 /* LaunchScreen.storyboard */,
@@ -106,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				4D3DF3321D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.m */,
+				4D3DF35F1D64D8DA00C8B627 /* EmailIdValidatorTests.m */,
 				4D3DF3341D64BFBB00C8B627 /* Info.plist */,
 			);
 			path = ObjectiveCUnitTestDemoTests;
@@ -160,7 +169,6 @@
 				TargetAttributes = {
 					4D3DF3141D64BFBB00C8B627 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 23854N7J5F;
 					};
 					4D3DF32D1D64BFBB00C8B627 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -213,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3DF33E1D64C01400C8B627 /* EmailIdValidator.m in Sources */,
 				4D3DF3201D64BFBB00C8B627 /* ViewController.m in Sources */,
 				4D3DF31D1D64BFBB00C8B627 /* AppDelegate.m in Sources */,
 				4D3DF31A1D64BFBB00C8B627 /* main.m in Sources */,
@@ -223,6 +232,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D3DF3601D64D8DA00C8B627 /* EmailIdValidatorTests.m in Sources */,
+				4D3DF33F1D64C01400C8B627 /* EmailIdValidator.m in Sources */,
 				4D3DF3331D64BFBB00C8B627 /* ObjectiveCUnitTestDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ObjectiveCUnitTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mausam.ObjectiveCUnitTestDemo;
@@ -356,6 +368,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ObjectiveCUnitTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.mausam.ObjectiveCUnitTestDemo;
